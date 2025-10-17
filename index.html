@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Little Bean — Coffee & Roastery</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+  <a href="#" class="logo">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="12" cy="12" r="10" fill="#34221F" />
+          <path d="M8 10c0-1.657 1.567-3 3.5-3S15 8.343 15 10v1H8v-1z" fill="#F6EDEB" />
+          <path d="M6 14c1.5 2 4 3 6 3s4.5-1 6-3v2a8 8 0 0 1-12 0v-2z" fill="#F6EDEB"/>
+        </svg>
+        <span>Little Bean</span>
+      </a>
+      <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#menu">Menu</a>
+        <a href="#about">About</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact" class="cta">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <h1>Warm cups, brighter mornings</h1>
+          <p class="lead">Hand-roasted beans from small farms. Crafted with care. Taste the difference.</p>
+          <p class="hero-cta"><a href="#menu" class="btn primary">Explore Menu</a> <a href="#about" class="btn">Our Story</a></p>
+          <ul class="meta">
+            <li>Open: Mon–Sun 7am–5pm</li>
+            <li>Free Wi‑Fi • Dog friendly</li>
+          </ul>
+        </div>
+        <div class="hero-image" aria-hidden="true">
+          <img src="assets/cup-of-coffee.png" alt="Latte art in a ceramic cup">
+        </div>
+      </div>
+    </section>
+
+    <section id="menu" class="section menu">
+      <div class="container">
+        <h2>Menu Highlights</h2>
+        <p class="section-sub">Simple, seasonal, and made to order.</p>
+        <div class="cards">
+          <article class="card">
+            <h3>House Espresso</h3>
+            <p class="price">$3.50</p>
+            <p>Rich, chocolatey base with a sweet finish. Single-origin blend.</p>
+          </article>
+          <article class="card">
+            <h3>Cappuccino</h3>
+            <p class="price">$4.25</p>
+            <p>Steamed milk with fluffy microfoam and our signature espresso.</p>
+          </article>
+          <article class="card">
+            <h3>Cold Brew</h3>
+            <p class="price">$4.00</p>
+            <p>Slow-steeped 18 hours for smooth, low-acid flavor.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="container about-grid">
+        <div>
+          <h2>About Little Bean</h2>
+          <p>We partner with small farms and roast in small batches to highlight the unique character of each origin. Our baristas are trained in both classic espresso and contemporary brewing techniques.</p>
+          <ul class="list">
+            <li>Freshly roasted beans weekly</li>
+            <li>Weekly cuppings & community events</li>
+            <li>Sustainable packaging and composting</li>
+          </ul>
+        </div>
+        <div class="about-image" aria-hidden="true">
+          <img src="assets/roastery.jpg" alt="Small batch roastery machines">
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="section gallery">
+      <div class="container">
+        <h2>Gallery</h2>
+        <div class="gallery-grid">
+          <img src="assets/shot1.jpg" alt="Barista pulling espresso">
+          <img src="assets/shot2.jpg" alt="Beans being roasted">
+          <img src="assets/shot3.jpg" alt="Customers enjoying coffee">
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="container contact-grid">
+        <div>
+          <h2>Visit & Contact</h2>
+          <p>123 Brew Lane<br>Portland, OR</p>
+          <p><strong>Phone:</strong> (555) 123-4567<br><strong>Email:</strong> hello@littlebean.example</p>
+          <div class="hours">
+            <h4>Hours</h4>
+            <p>Mon–Fri 7am–5pm<br>Sat–Sun 8am–5pm</p>
+          </div>
+          <p><a href="#" class="btn">Get Directions</a></p>
+        </div>
+        <form class="contact-form" action="#" onsubmit="submitContact(event)">
+          <label>Full name<input type="text" name="name" required></label>
+          <label>Email<input type="email" name="email" required></label>
+          <label>Message<textarea name="message" rows="5" required></textarea></label>
+          <p><button type="submit" class="btn primary">Send Message</button></p>
+          <p class="note">We aim to respond within 24 hours.</p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Little Bean — Small batch roastery</p>
+      <nav class="social">
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="Facebook">FB</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
